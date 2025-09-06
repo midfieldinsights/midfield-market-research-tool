@@ -76,4 +76,6 @@ app.get('/redirect/:groupId/:vendorId/:status', (req, res) => {
 
 const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => console.log(`Backend is running on port ${PORT}`));
-
+app.get('/', (req, res) => {
+  res.send('Backend API is running');
+});
