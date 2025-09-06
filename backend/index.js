@@ -74,5 +74,5 @@ app.get('/redirect/:groupId/:vendorId/:status', (req, res) => {
   res.redirect(surveyLink);
 });
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => console.log(`Backend is running on port ${PORT}`));
